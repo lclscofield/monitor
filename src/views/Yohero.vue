@@ -111,7 +111,11 @@ export default {
                         this.resList = list
                         console.log(list)
                         if (this.resPrice(list[0].price) <= this.limitPrice) {
-                            alert('预警！！！有符合监控价格的英雄，请尽快扫货！')
+                            this.$message.info({
+                                content: '预警！！！有符合监控价格的英雄，请注意！',
+                                duration: 5,
+                                maxCount: 5,
+                            })
                         }
                     }
                 }
