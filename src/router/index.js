@@ -15,6 +15,14 @@ const routes = [
         // which is lazy-loaded when the route is visited.
         component: () => import(/* webpackChunkName: "yohero" */ '../views/Yohero.vue'),
     },
+    {
+        path: '/bnx',
+        name: 'Bnx',
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () => import(/* webpackChunkName: "bnx" */ '../views/Bnx.vue'),
+    },
 ]
 
 const router = createRouter({

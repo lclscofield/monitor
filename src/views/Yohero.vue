@@ -83,7 +83,7 @@ export default {
         },
 
         // 开始监控
-        start() {
+        async start() {
             let timer = setInterval(async () => {
                 let orders = {
                     up: '4',
@@ -134,6 +134,10 @@ export default {
 
 <style lang="less" scoped>
 .yohero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     .yohero-item {
         padding: 10px;
     }
